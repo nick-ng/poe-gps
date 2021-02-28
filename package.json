@@ -4,7 +4,12 @@
   "description": "Show where your team mates are during league start",
   "main": "index.js",
   "scripts": {
-    "dev-local": "nodemon --delay 2 ./server/server.js",
+    "dev:client": "nodemon --ignore ./server --delay 2 ./client/client.js",
+    "dev:server": "nodemon --ignore ./client --delay 2 ./server/server.js",
+    "start": "node ./client/client.js",
+    "server": "node ./server/server.js",
+    "redis:up": "docker-compose -f ./docker/redis-compose.yml up -d",
+    "redis:down": "docker-compose -f ./docker/redis-compose.yml down",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
