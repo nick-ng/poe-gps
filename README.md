@@ -15,6 +15,8 @@ Forwards PoE `Client.txt` log entries after apply filters to configured log entr
 
 `node start <log file path> <handler> <remote endpoint>`
 
+Example: `node start "H:\SteamLibrary\steamapps\common\Path of Exile\logs\Client.txt"`
+
 Available handlers:
 
 - `console` forwards log entries to current console (Default).
